@@ -23,17 +23,28 @@ else:
 # WRITE YOUR CODE HERE
 
 yaml_data = yaml.dump(source_content)
-print(yaml_data)
 
 # 2. Save the YAML into a new file with the name for it received as a argument
 # 2.1 Check the target file name was specified as an argument, if not, output the YAML to the screen instead
 # WRITE YOUR CODE HERE
 
-with open(sys.argv[2], "w") as file:
-    file.write(yaml_data)
+if len(sys.argv) > 2:
+   print(f"printing to {sys.argv[2]}")
+else:
+    print("ERROR: No YAML file was specified")
+    print(yaml_data)
+    exit(1)
 
 # 2.2 Check the target file doesn't already exist
 # WRITE YOUR CODE HERE
 
+if os.path.exists(sys.argv[2]):
+    print("ERROR: " + sys.argv[2] + " already exists")
+else:
+    print("file does not exist")
+
 # 2.3 If previous conditions not met, then save YAML file
 # WRITE YOUR CODE HERE
+
+with open(sys.argv[2], "w") as file:
+    file.write(yaml_data)
