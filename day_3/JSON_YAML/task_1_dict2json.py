@@ -16,9 +16,12 @@ servers_dict = {
         "status": "maintenance"
     }
 }
-
+# dumps -returns string
 json_string = json.dumps(servers_dict, indent=4)
 print(json_string)
 
-# with open("servers.json", "w") as outfile:
-#     json.dump(servers_dict, outfile, indent=4)
+with open("servers.json", "w") as outfile:
+    # dump - returns stream that can be written to a file
+    json.dump(servers_dict, outfile, indent=4)
+    # could also use:
+    # f.write(json.dumps(server_dict, indent=4))

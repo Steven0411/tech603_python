@@ -17,11 +17,12 @@ if len(sys.argv) > 1:
     # No source file specified
 else:
     print("ERROR: No JSON file was specified")
-    print("Usage: json2yaml.py <source_file.json> <target_file.yaml>")
+    print("Usage: task_4_json2yaml.py <source_file.json> <target_file.yaml>")
 
 # 1. Convert the JSON to YAML - use yaml library
 # WRITE YOUR CODE HERE
 
+# yaml.dump turns dict into yaml
 yaml_data = yaml.dump(source_content)
 
 # 2. Save the YAML into a new file with the name for it received as a argument
@@ -48,4 +49,5 @@ else:
 # WRITE YOUR CODE HERE
 
 with open(sys.argv[2], "w") as file:
+    print("")
     file.write(yaml_data)

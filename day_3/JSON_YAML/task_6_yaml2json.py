@@ -8,14 +8,12 @@ if len(sys.argv) > 1:
         source_file = open(sys.argv[1], "r")
         source_content = yaml.safe_load(source_file)
         source_file.close()
-
     else:
         print(f"ERROR: {sys.argv[1]} does not exist")
         exit(1)
-
 else:
     print("ERROR: No YAML file was specified")
-    print("Usage: yaml2json.py <source_file.yaml> <target_file.json>")
+    print("Usage: task_6_yaml2json.py <source_file.yaml> <target_file.json>")
 
 json_data = json.dumps(source_content)
 
