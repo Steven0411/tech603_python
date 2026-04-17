@@ -40,6 +40,7 @@ else:
 
 if os.path.exists(sys.argv[2]):
     print("ERROR: " + sys.argv[2] + " already exists")
+    exit(1)
 else:
     print("file does not exist")
 
