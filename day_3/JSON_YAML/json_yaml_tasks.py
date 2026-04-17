@@ -20,5 +20,5 @@ servers_dict = {
 json_string = json.dumps(servers_dict, indent=4)
 print(json_string)
 
-# with open("serverstask.json", "w") as outfile:
+# with open("servers.json", "w") as outfile:
 #     json.dump(servers_dict, outfile, indent=4)
