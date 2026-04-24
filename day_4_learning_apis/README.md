@@ -20,7 +20,7 @@
 
 * REST - representational state transfer
 * type of architecture used for api
-* primarily used to build wev services which are lightweight, maintainable and scalable
+* primarily used to build web services which are lightweight, maintainable and scalable
 * RESTful services use HTTP
 
 RESTful services should have the following properties:

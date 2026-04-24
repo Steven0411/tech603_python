@@ -26,8 +26,8 @@
     1. Do this
     
        Note:
-       2. note 1
-       3. note 2
+       1. note 1
+       2. note 2
     2. then this
 * List item 2
 
